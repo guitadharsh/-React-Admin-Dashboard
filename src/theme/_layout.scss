@@ -18,8 +18,9 @@
         background-position: center 0;
         background-repeat: no-repeat;
         animation-name: rotateBackground;
-        animation-duration: 20s;
+        animation-duration: 30s;
         animation-iteration-count: infinite;
+        transition: ease-in-out;
     }
 
     @keyframes rotateBackground {
