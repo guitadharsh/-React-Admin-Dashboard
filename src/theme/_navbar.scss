@@ -2,4 +2,56 @@
     height: 20vh;
     width: 100%;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    &__container {
+        height: 70%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        // background-color: rgba(255, 0, 0, 0.24);
+    }
+
+    &__icons {
+        img {
+            height: 2rem;
+            width: 2rem;
+            margin-left: 2rem;
+        }
+    }
+
+    &__details {
+        p {
+            font-size: 18px;
+        }
+        span {
+            color: var(--text-green);
+        }
+    }
+
+    &__profile {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: .2rem;
+        background-color: var(--bg--primary);
+        box-shadow: 0 0 40px 0 var(--bg--primary);
+
+        
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+    }
 }
