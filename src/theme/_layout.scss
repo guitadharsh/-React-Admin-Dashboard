@@ -2,11 +2,9 @@
     height: 100vh;
     width: 100%;
     background-color: var(--bg-dark);
-    z-index: 1;
     overflow: hidden;
 
     &__bg {
-        z-index: 10;
         position: fixed;
         top: -50%; 
         left: 0;
@@ -21,6 +19,7 @@
         animation-duration: 30s;
         animation-iteration-count: infinite;
         transition: ease-in-out;
+        z-index: 2;
     }
 
     @keyframes rotateBackground {
