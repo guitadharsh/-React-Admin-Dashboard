@@ -2,23 +2,33 @@ import React from 'react'
 import plusImg from '../assets/plus.svg'
 import searchImg from '../assets/search.svg'
 
-const EventHeading: React.FC = () => {
+interface EventHeadingProps {
+    isSearch: boolean
+    title: string
+    subTitle?: string
+}
+
+const EventHeading: React.FC<EventHeadingProps> = ({ isSearch, title, subTitle }) => {
     return (
         <div className="eventreq__heading">
-            <h1>Event Requests</h1>
+            <h1>{title} <span>{subTitle}</span></h1>
 
-            <div className="eventreq__search">
+            {
+                isSearch &&
+                <div className="eventreq__search">
 
-                <div className="eventreq__input">
-                    <img src={searchImg} alt="search-icon" className="search-icon" />
-                    <input type="text" placeholder='Search here' />
+                    <div className="eventreq__input">
+                        <img src={searchImg} alt="search-icon" className="search-icon" />
+                        <input type="text" placeholder='Search here' />
+                    </div>
+
+                    <button>
+                        <img src={plusImg} alt="plus-icon" />
+                    </button>
+
                 </div>
+            }
 
-                <button>
-                    <img src={plusImg} alt="plus-icon" />
-                </button>
-
-            </div>
         </div>
     )
 }

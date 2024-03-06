@@ -4,7 +4,7 @@ import { EventTable, EventHeading } from '../components'
 const EventRequest: React.FC = () => {
   return (
     <div className='eventreq'>
-      <EventHeading />
+      <EventHeading isSearch={true} title='Event Requests' />
       <EventTable />
     </div>
   )
