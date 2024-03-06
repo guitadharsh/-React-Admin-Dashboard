@@ -7,8 +7,8 @@ const AdminLayout: React.FC = () => {
         <>
             <div className='admin'>
                 <div className="admin__bg" />
-
                 <Navbar />
+
                 <div className="admin__container">
                     <Sidebar />
                     <Outlet />

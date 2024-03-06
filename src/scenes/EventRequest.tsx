@@ -2,7 +2,9 @@ import React from 'react'
 
 const EventRequest: React.FC = () => {
   return (
-    <div>EventRequest</div>
+    <div className='eventrequest'>EventRequest
+      <h1>hello</h1>
+    </div>
   )
 }
 

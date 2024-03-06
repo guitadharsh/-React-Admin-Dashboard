@@ -1,1 +1,2 @@
-export { default as AdminPage } from './AdminPage';
+export { default as EventName } from './EventName';
+export { default as EventRequest } from './EventRequest';
