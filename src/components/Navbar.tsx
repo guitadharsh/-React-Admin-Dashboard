@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
                     <img src={profile} alt="profile-picture" />
                 </div>
             </div>
-        </div>
+        </div>    
     )
 }
 
