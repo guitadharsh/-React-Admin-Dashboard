@@ -31,4 +31,11 @@
             transform: rotate(360deg);
         }
     }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
 }

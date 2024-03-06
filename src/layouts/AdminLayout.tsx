@@ -9,8 +9,10 @@ const AdminLayout: React.FC = () => {
                 <div className="admin__bg" />
 
                 <Navbar />
-                <Sidebar />
-                <Outlet />
+                <div className="admin__container">
+                    <Sidebar />
+                    <Outlet />
+                </div>
             </div>
 
 
