@@ -1,10 +1,12 @@
 import React from 'react'
 import { tableHeading, tableData } from '../data/tableData'
 import eye from '../assets/eye.svg'
+import { useNavigate } from 'react-router-dom'
 
 const EventTable: React.FC = () => {
+  const navigate = useNavigate()
   return (
-    <div className='eventtable'>
+    <div className='eventtable' onClick={()=> navigate('/event-name')}>
       <table>
         <thead>
           <tr>
