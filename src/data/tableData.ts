@@ -1,5 +1,4 @@
 const tableHeading = [
-    { title: '', isSort: true },
     { title: 'Event Name', isSort: false },
     { title: 'Event Start', isSort: false },
     { title: 'Event End', isSort: true },
